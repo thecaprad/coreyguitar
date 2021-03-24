@@ -12,7 +12,7 @@ if platform.node() == "Coreys-MacBook-Air.local":
     ALLOWED_HOSTS = ['127.0.0.1', '10.0.1.2']
 else:
     DEBUG = False
-    ALLOWED_HOSTS = ['.pythonanywhere.com']
+    ALLOWED_HOSTS = ['.pythonanywhere.com', '.coreyguitar.com']
 
 # Application definition
 
