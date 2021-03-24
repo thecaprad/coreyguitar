@@ -2,7 +2,9 @@ import os, platform
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-with open('SECRET_KEY.txt') as f:
+fp = my_file = os.path.join(BASE_DIR, 'SECRET_KEY.txt')
+
+with open(fp) as f:
     SECRET_KEY = f.read().strip()
 
 if platform.node() == "Coreys-MacBook-Air.local":
