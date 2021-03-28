@@ -1,5 +1,10 @@
-body {
-    background-color: #ECD6B7;
+
+body, html {
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #F0DFC8;
 }
 
 .splash-img {
@@ -10,4 +15,13 @@ body {
     height: 303px;
     margin-left: -225px; /* Half the width */
     margin-top: -151.5px; /* Half the height */
+}
+
+.hero {
+    background-image: url("images/home-hero.png");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
