@@ -6,6 +6,20 @@ body, html {
     background-color: #F0DFC8;
 }
 
+h1{
+    display: inline-block;
+    font-family: 'Cormorant', serif;
+    font-size: 40pt;
+    color: #66A82F;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14pt;
+}
+
 .splash-img {
     position: absolute;
     top: 50%;
@@ -27,10 +41,17 @@ body, html {
 
 .greeting {
     text-align: center;
+    width: 100%;
+    margin: auto;
 }
 
-.name h1{
-    display: inline-block;
+.mission {
+    width: 70%;
+    margin: auto;
+}
+
+.mission p {
+    text-align: left;
 }
 
 .dot {
