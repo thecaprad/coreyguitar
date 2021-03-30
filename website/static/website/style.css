@@ -24,3 +24,20 @@ body, html {
     background-size: cover;
     position: relative;
 }
+
+.greeting {
+    text-align: center;
+}
+
+.name h1{
+    display: inline-block;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #DF472C;
+    border-radius: 50%;
+    display: inline-block;
+    margin-inline: 50px;
+}
