@@ -3,21 +3,36 @@ body, html {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    background-color: #F0DFC8;
+    background-color: #ffffff;
 }
 
 h1{
     display: inline-block;
-    font-family: 'Cormorant', serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 40pt;
-    color: #66A82F;
+    color: #000000;
     margin-top: .25em;
     margin-bottom: .25em;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 14pt;
+    color: #000000;
+}
+
+nav {
+    margin: auto;
+    width: 1242px;
+    overflow: hidden;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
 }
 
 .splash-img {
