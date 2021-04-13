@@ -10,21 +10,21 @@ h1{
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 20pt;
+    font-size: 16pt;
     color: #000000;
-    margin-top: .4em;
-    margin-bottom: .4em;
+    margin-top: .3em;
+    margin-bottom: .3em;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 13.5pt;
+    font-size: 12pt;
     color: #000000;
 }
 
 p a {
     font-family: 'Raleway', sans-serif;
-    font-size: 13.5pt;
+    font-size: 12pt;
     text-decoration: none;
     color: #000000;
     font-weight: 600;
@@ -37,7 +37,7 @@ p a {
 nav a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 14pt;
+    font-size: 12pt;
     text-decoration: none;
     color: #000000;
     padding-inline-start: 14pt;
@@ -45,7 +45,7 @@ nav a {
 
 nav {
     margin: auto;
-    width: 1242px;
+    width: 996px;
     overflow: hidden;
 }
 
@@ -58,23 +58,23 @@ nav ul li {
 }
 
 .hero {
-    height: 614px;
-    width: 1242px;
+    height: 492.39px;
+    width: 996px;
     margin: auto;
     background-image: url("images/root-beer-for-home.png");
 }
 
 .content {
     padding-top: 20px;
-    width: 1242px;
-    height: 409px;
+    width: 996px;
+    height: 327px;
     margin: auto;
 }
 
 section {
     display: inline-block;
     float: left;
-    width: 829px;
+    width: 664px;
     height: 100%;
 }
 
@@ -97,12 +97,12 @@ hr {
 aside {
     display: inline-block;
     float: right;
-    width: 413px;
+    width: 332px;
     height: 100%;
 }
 
 aside img {
-    padding-left: 105px;
+    padding-left: 84px;
 }
 
 .splash-img {
