@@ -44,6 +44,13 @@ nav ul li {
     display: inline-block;
 }
 
+.hero {
+    height: 614px;
+    width: 1242px;
+    margin: auto;
+    background-image: url("images/root-beer-for-home.png");
+}
+
 .splash-img {
     position: absolute;
     top: 50%;
@@ -52,37 +59,4 @@ nav ul li {
     height: 303px;
     margin-left: -225px; /* Half the width */
     margin-top: -151.5px; /* Half the height */
-}
-
-.hero {
-    background-image: url("images/home-hero.png");
-    height: 80%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.greeting {
-    text-align: center;
-    width: 100%;
-    margin: auto;
-}
-
-.mission {
-    width: 70%;
-    margin: auto;
-}
-
-.mission p {
-    text-align: left;
-}
-
-.dot {
-    height: 25px;
-    width: 25px;
-    background-color: #DF472C;
-    border-radius: 50%;
-    display: inline-block;
-    margin-inline: 50px;
 }
