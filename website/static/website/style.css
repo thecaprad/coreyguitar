@@ -21,6 +21,15 @@ p {
     color: #000000;
 }
 
+nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14pt;
+    text-decoration: none;
+    color: #000000;
+    padding-inline-start: 14pt;
+}
+
 nav {
     margin: auto;
     width: 1242px;
