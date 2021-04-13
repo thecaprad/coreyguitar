@@ -51,6 +51,28 @@ nav ul li {
     background-image: url("images/root-beer-for-home.png");
 }
 
+.content {
+    width: 1242px;
+    height: 400px;
+    margin: auto;
+}
+
+section {
+    display: inline-block;
+    float: left;
+    width: 934px;
+    height: 100%;
+    background-color: #ff33ff;
+}
+
+aside {
+    display: inline-block;
+    float: right;
+    width: 308px;
+    height: 100%;
+    background-color: #66ff66;
+}
+
 .splash-img {
     position: absolute;
     top: 50%;
