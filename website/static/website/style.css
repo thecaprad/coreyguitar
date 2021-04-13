@@ -9,16 +9,29 @@ body, html {
 h1{
     display: inline-block;
     font-family: 'Open Sans', sans-serif;
-    font-size: 40pt;
+    font-weight: 600;
+    font-size: 20pt;
     color: #000000;
-    margin-top: .25em;
-    margin-bottom: .25em;
+    margin-top: .4em;
+    margin-bottom: .4em;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 14pt;
+    font-size: 13.5pt;
     color: #000000;
+}
+
+p a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13.5pt;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+.b {
+    font-weight: 600;
 }
 
 nav a {
@@ -52,25 +65,44 @@ nav ul li {
 }
 
 .content {
+    padding-top: 20px;
     width: 1242px;
-    height: 400px;
+    height: 409px;
     margin: auto;
 }
 
 section {
     display: inline-block;
     float: left;
-    width: 934px;
+    width: 829px;
     height: 100%;
-    background-color: #ff33ff;
+}
+
+article {
+    padding-left: 40px;
+}
+
+article p {
+    text-align: justify;
+}
+
+hr {
+    margin-left: 40px;
+    border: none;
+    height: 1px;
+    color: #979797;
+    background-color: #979797;
 }
 
 aside {
     display: inline-block;
     float: right;
-    width: 308px;
+    width: 413px;
     height: 100%;
-    background-color: #66ff66;
+}
+
+aside img {
+    padding-left: 105px;
 }
 
 .splash-img {
