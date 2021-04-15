@@ -2,29 +2,27 @@
 {% load static %}
 
 {% block content %}
-<main>
-    <div class="hero"></div>
-    <div class="content">
-        <section>
-            <article>
-                <h1>Hello and welcome to my personal website</h1>
+<div class="hero"></div>
+<div class="content">
+    <main>
+        <article>
+            <h1>Hello and welcome to my personal website</h1>
 
-                <p>My name is Corey Richardson and I’m a guitarist and web developer in Chicago, IL.</p>
+            <p>My name is Corey Richardson and I’m a guitarist and web developer in Chicago, IL.</p>
 
-                <p>I’ve played guitar for some famous people and productions, as well as for many unfamous people and productions. I enjoy them both, and would be glad to play for you.</p>
-                    
-                <p>Much of time is spent as the content director for Soundslice.com — a company that makes web-based music eduction tools.</p>
-            </article>
-            <hr>
-            <article>
-                <h1>Contact and work samples</h1>
+            <p>I’ve played guitar for some famous people and productions, as well as for many unfamous people and productions. I enjoy them both, and would be glad to play for you.</p>
+                
+            <p>Much of time is spent as the content director for Soundslice.com — a company that makes web-based music eduction tools.</p>
+        </article>
+        <hr>
+        <article>
+            <h1>Contact and work samples</h1>
 
-                <p>To get in touch, send me an email at <span class="b">corey[at]hey.com</span>. For samples of my work playing music, click <a href="https://www.youtube.com/user/captainrad/featured">here</a>. For code, click <a href="https://github.com/thecaprad/">here</a>.</p>
-            </article>
-        </section>
-        <aside>
-            <img src="{% static 'website/images/chord-diagram-for-home.png' %}" alt="Chord diagram">
-        </aside>
-    </div>
-</main>
+            <p>To get in touch, send me an email at <span class="b">corey[at]hey.com</span>. For samples of my work playing music, click <a href="https://www.youtube.com/user/captainrad/featured">here</a>. For code, click <a href="https://github.com/thecaprad/">here</a>.</p>
+        </article>
+    </main>
+    <aside>
+        <img src="{% static 'website/images/chord-diagram-for-home.png' %}" alt="Chord diagram">
+    </aside>
+</div>
 {% endblock %}
