@@ -6,14 +6,19 @@ body, html {
     background-color: #ffffff;
 }
 
-h1{
-    display: inline-block;
+h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 16pt;
     color: #000000;
     margin-top: .3em;
     margin-bottom: .3em;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 13pt;
 }
 
 p {
@@ -41,6 +46,13 @@ nav a {
     text-decoration: none;
     color: #000000;
     padding-inline-start: 14pt;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #979797;
+    background-color: #979797;
 }
 
 nav {
@@ -71,7 +83,74 @@ nav ul li {
     background-image: url("images/moving-boxes-for-work.png");
 }
 
+#overlay {
+    visibility: hidden;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+  }
+
+.marquee {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    width: 1360px;
+    height: 538px;
+    margin: auto;
+    margin-left: -680px;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+}
+
+.video {
+    float: left;
+    height: 100%;
+    width: 956px;
+}
+
+.video-info {
+    float: right;
+    height: 100%;
+    width: 404px;
+}
+
+.video-info hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title {
+    display: block;
+    width: 404px;
+    height: 40px;
+}
+
+.title h1 {
+    float: left;
+    padding-left: 20px;
+}
+
+.title p {
+    float: right;
+    padding-right: 20px;
+}
+
+.copy > * {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .content {
+    position: relative;
     padding-top: 20px;
     width: 996px;
     height: 327px;
@@ -104,20 +183,16 @@ main {
     height: 100%;
 }
 
+main hr {
+    margin-left: 40px;
+}
+
 article {
     padding-left: 40px;
 }
 
 article p {
     text-align: justify;
-}
-
-hr {
-    margin-left: 40px;
-    border: none;
-    height: 1px;
-    color: #979797;
-    background-color: #979797;
 }
 
 aside {
