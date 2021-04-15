@@ -18,19 +18,19 @@ h1{
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 12pt;
+    font-size: 11pt;
     color: #000000;
 }
 
 p a {
     font-family: 'Raleway', sans-serif;
-    font-size: 12pt;
+    font-size: 11pt;
     text-decoration: none;
     color: #000000;
     font-weight: 600;
 }
 
-.b {
+p b {
     font-weight: 600;
 }
 
@@ -95,7 +95,6 @@ section img {
 }
 
 section p {
-    font-size: 11pt;
     text-align: justify;
 }
 
