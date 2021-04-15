@@ -6,3 +6,6 @@ def splash(request):
 
 def index(request):
     return render(request, 'website/home.html', {})
+
+def my_work(request):
+    return render(request, 'website/my-work.html', {})

@@ -64,11 +64,22 @@ nav ul li {
     background-image: url("images/root-beer-for-home.png");
 }
 
+.work-header {
+    height: 302px;
+    width: 996px;
+    margin: auto;
+    background-image: url("images/moving-boxes-for-work.png");
+}
+
 .content {
     padding-top: 20px;
     width: 996px;
     height: 327px;
     margin: auto;
+}
+
+.section-header {
+    padding-left: 40px;
 }
 
 section {
@@ -103,6 +114,31 @@ aside {
 
 aside img {
     padding-left: 84px;
+}
+
+.work-row {
+    width: 996px;
+    height: 237px;
+    margin-top: 20px;
+    display: block;
+}
+
+.work-row img {
+    display: inline-block;
+}
+
+.work-row > img:first-child {
+    padding-left: 40px;
+    float: left;
+}
+
+.work-row > img:nth-child(2) {
+    margin-left: 20px;
+}
+
+.work-row > img:last-child {
+    padding-right: 40px;
+    float: right;
 }
 
 .splash-img {
