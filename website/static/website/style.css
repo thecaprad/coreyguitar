@@ -101,10 +101,10 @@ nav ul li {
   }
 
 
-.marquee.active {
+#marquee.active {
     display: block;
 }
-.marquee {
+#marquee {
     display: none;
     position: fixed;
     background-color: #ffffff;
@@ -117,19 +117,26 @@ nav ul li {
     z-index: 2;
 }
 
-.video {
+#closemarqueebut {
+    display: block;
+    float: right;
+    z-index: 3;
+    position: relative;
+}
+
+.media {
     float: left;
     height: 100%;
     width: 956px;
 }
 
-.video-info {
+.media-info {
     float: right;
     height: 100%;
     width: 404px;
 }
 
-.video-info hr {
+.media-info hr {
     margin-left: 20px;
     margin-right: 20px;
 }
