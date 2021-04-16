@@ -100,14 +100,14 @@ nav ul li {
 .marquee {
     visibility: hidden;
     display: block;
-    position: absolute;
+    position: fixed;
     background-color: #ffffff;
     width: 1360px;
     height: 538px;
-    margin: auto;
-    margin-left: -680px;
     left: 50%;
     top: 50%;
+    margin-left: -680px;
+    margin-top: -269px;
     z-index: 2;
 }
 
