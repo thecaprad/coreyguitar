@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         xEls[i].addEventListener('click', function() {
             document.getElementById('overlay').classList.toggle('active');
             document.getElementById('marquee').classList.toggle('active');
-            allMarqueeChildrenOff();
+            turnOffMarqueeChildren();
         })
     }
 });
