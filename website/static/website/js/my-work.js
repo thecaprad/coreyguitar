@@ -8,14 +8,20 @@ function handleWorkClick(i) {
 }
 
 function turnOffMarquee() {
-    document.getElementById('overlay').classList.toggle('active');
-    document.getElementById('marquee').classList.toggle('active');
+    var overlay = document.getElementById('overlay');
+    if (overlay.className == 'active') {
+        overlay.classList.toggle('active');
+    }
+    var marquee = document.getElementById('marquee');
+    if (marquee.className == 'active') {
+        marquee.classList.toggle('active');
+    }
     turnOffMarqueeChildren();
 }
 
 function turnOffMarqueeChildren() {
     for (it = 0; it < marquee.children.length; it++) {
-        marquee.children[it].style.display = "none";
+        marquee.children[it].style.display = 'none';
     }
 }
 
@@ -36,4 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
             turnOffMarqueeChildren();
         })
     }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === "Escape") {
+            turnOffMarquee();
+        }
+    })
 });
