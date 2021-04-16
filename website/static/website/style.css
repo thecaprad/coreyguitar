@@ -132,19 +132,28 @@ nav ul li {
 
 .media-info {
     float: right;
-    height: 100%;
+    height: 538px;
     width: 404px;
+}
+
+.media-info .copy {
+    position: absolute;
+    top: 50px;
+    height: 488px;
+    overflow: scroll;
 }
 
 .media-info hr {
     margin-left: 20px;
     margin-right: 20px;
+    clear: both;
 }
 
 .title {
     display: block;
     width: 404px;
-    height: 40px;
+    height: 50px;
+    background-color: #ffffff;
 }
 
 .title h1 {
