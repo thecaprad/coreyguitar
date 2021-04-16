@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<script src="{% static 'website/js/my-work.js' %}"></script>
 <div id="overlay"></div>
 <div class="marquee">
     <div class="video">
@@ -10,7 +11,7 @@
     <div class="video-info">
         <div class="title">
             <h1>“Gardens — Julian Lage</h1>
-            <p>X</p>
+            <p><a href="#" class="x"><b>X</b></a></p>
         </div>
         <hr>
         <div class="copy">
@@ -30,19 +31,19 @@
         <p>Click on a thumbnail to learn more about a project.</p>
     </div>
     <div class="work-row">
-        <img src="{% static 'website/images/work-thumbnails/1-gardens.png' %}" alt="TODO">
-        <img src="{% static 'website/images/work-thumbnails/2-shot-in-the-dark.png' %}" alt="TODO">
-        <img src="{% static 'website/images/work-thumbnails/3-assep.png' %}" alt="TODO">
+        <a href="#" id="work-1"><img src="{% static 'website/images/work-thumbnails/1-gardens.png' %}" alt="TODO"></a>
+        <a href="#"><img src="{% static 'website/images/work-thumbnails/2-shot-in-the-dark.png' %}" alt="TODO"></a>
+        <a href="#"><img src="{% static 'website/images/work-thumbnails/3-assep.png' %}" alt="TODO"></a>
     </div>
     <div class="work-row">
-        <img src="{% static 'website/images/work-thumbnails/4-sunny.png' %}" alt="TODO">
-        <img src="{% static 'website/images/work-thumbnails/5-potter.png' %}" alt="TODO">
-        <img src="{% static 'website/images/work-thumbnails/6-danny-boy.png' %}" alt="TODO">
+        <a><img src="{% static 'website/images/work-thumbnails/4-sunny.png' %}" alt="TODO"></a>
+        <a><img src="{% static 'website/images/work-thumbnails/5-potter.png' %}" alt="TODO"></a>
+        <a><img src="{% static 'website/images/work-thumbnails/6-danny-boy.png' %}" alt="TODO"></a>
     </div>
     <div class="work-row">
-        <img src="{% static 'website/images/work-thumbnails/7-getaway.png' %}" alt="TODO">
-        <img src="{% static 'website/images/work-thumbnails/8-darren.png' %}" alt="TODO">
-        <img src="{% static 'website/images/work-thumbnails/9-ani.png' %}" alt="TODO">
+        <a><img src="{% static 'website/images/work-thumbnails/7-getaway.png' %}" alt="TODO"></a>
+        <a><img src="{% static 'website/images/work-thumbnails/8-darren.png' %}" alt="TODO"></a>
+        <a><img src="{% static 'website/images/work-thumbnails/9-ani.png' %}" alt="TODO"></a>
     </div>
 
     <section>
