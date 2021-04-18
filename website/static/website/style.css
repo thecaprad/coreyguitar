@@ -115,6 +115,7 @@ nav ul li {
     margin-left: -680px;
     margin-top: -269px;
     z-index: 2;
+    overflow: hidden;
 }
 
 #closemarqueebut {
@@ -136,8 +137,29 @@ nav ul li {
     width: 404px;
 }
 
-.media-info .copy {
-    position: absolute;
+.title {
+    display: block;
+    width: 404px;
+    padding-top: 8px;
+}
+
+.title h1 {
+    float: left;
+    width: 80%;
+    padding-left: 20px;
+}
+
+.title .x {
+    float: right;
+}
+
+.title p {
+    float: right;
+    padding-right: 20px;
+}
+
+ .copy {
+    display: block;
     top: 50px;
     height: 488px;
     overflow: scroll;
@@ -147,23 +169,6 @@ nav ul li {
     margin-left: 20px;
     margin-right: 20px;
     clear: both;
-}
-
-.title {
-    display: block;
-    width: 404px;
-    height: 50px;
-    background-color: #ffffff;
-}
-
-.title h1 {
-    float: left;
-    padding-left: 20px;
-}
-
-.title p {
-    float: right;
-    padding-right: 20px;
 }
 
 .copy > * {
