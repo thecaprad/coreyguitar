@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var workEls = document.getElementsByClassName('worksamplebut');
 
     for (let i = 0; i < workEls.length; i++) {
-        workEls[i].addEventListener('click', function() {
+        workEls[i].addEventListener('click', function(e) {
+            e.preventDefault();
             handleWorkClick(i);
         })
     }
