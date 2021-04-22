@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var xEls = document.getElementsByClassName('x');
     for (let i = 0; i < workEls.length; i++) {
-        xEls[i].addEventListener('click', function() {
+        xEls[i].addEventListener('click', function(e) {
+            e.preventDefault();
             document.getElementById('overlay').classList.toggle('active');
             document.getElementById('marquee').classList.toggle('active');
             turnOffMarqueeChildren();
