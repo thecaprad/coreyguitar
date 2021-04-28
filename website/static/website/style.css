@@ -21,18 +21,20 @@ h3 {
     font-size: 13pt;
 }
 
-p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 11pt;
+p, li {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    line-height: 24px;
     color: #000000;
 }
 
-p a {
-    font-family: 'Raleway', sans-serif;
-    font-size: 11pt;
+p a, li a {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    line-height: 24px;
     text-decoration: none;
-    color: #000000;
-    font-weight: 600;
+    color: #0d66b0;
+    font-weight: 500;
 }
 
 p b {
@@ -151,6 +153,9 @@ nav ul li {
 
 .title .x {
     float: right;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .title p {
@@ -165,6 +170,12 @@ nav ul li {
     overflow: scroll;
 }
 
+.credit {
+    color: #0d66b0;
+    font-weight: 100;
+    font-style: oblique;
+}
+
 .media-info hr {
     margin-left: 20px;
     margin-right: 20px;
@@ -174,6 +185,18 @@ nav ul li {
 .copy > * {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.copy ul {
+    margin-left: 20px;
+}
+
+.copy figure {
+    margin: auto;
+}
+
+.copy figure img {
+    width: 100%;
 }
 
 .content {
