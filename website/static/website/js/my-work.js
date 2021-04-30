@@ -45,6 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
+    document.getElementById('overlay').addEventListener('click', function(e) {
+        turnOffMarquee();
+    })
+
     document.addEventListener('keydown', function(e) {
         if (e.key === "Escape") {
             turnOffMarquee();
