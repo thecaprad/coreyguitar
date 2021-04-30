@@ -1,3 +1,5 @@
+/* BASE */
+
 body, html {
     height: 100%;
     margin-top: 0;
@@ -13,6 +15,11 @@ h1 {
     color: #000000;
     margin-top: .3em;
     margin-bottom: .3em;
+}
+
+h1.nav-title {
+    float: left;
+    padding: 7px;
 }
 
 h3 {
@@ -71,14 +78,50 @@ nav ul li {
     display: inline-block;
 }
 
-.hero {
+section.content {
+    position: relative;
+    padding-top: 20px;
+    width: 996px;
+    height: 327px;
+    margin: auto;
+}
+
+/* HOME */
+
+.home-banner {
     height: 492.39px;
     width: 996px;
     margin: auto;
     background-image: url("images/root-beer-for-home.png");
 }
 
-.work-header {
+main {
+    float: left;
+    width: 664px;
+    height: 100%;
+}
+
+main hr {
+    margin-left: 40px;
+}
+
+article.home-copy {
+    padding-left: 40px;
+}
+
+aside {
+    float: right;
+    width: 332px;
+    height: 100%;
+}
+
+aside img {
+    padding-left: 84px;
+}
+
+/* MY-WORK */
+
+.my-work-banner {
     height: 302px;
     width: 996px;
     margin: auto;
@@ -133,7 +176,7 @@ nav ul li {
     width: 956px;
 }
 
-.media-info {
+article.media-info {
     float: right;
     height: 538px;
     width: 404px;
@@ -165,15 +208,15 @@ nav ul li {
 
  .copy {
     display: block;
-    top: 50px;
-    height: 488px;
+    height: 460px;
     overflow: scroll;
 }
 
-.credit {
+p.credit {
     color: #0d66b0;
     font-weight: 100;
     font-style: oblique;
+    font-size: 20px;
 }
 
 .media-info hr {
@@ -197,62 +240,6 @@ nav ul li {
 
 .copy figure img {
     width: 100%;
-}
-
-.content {
-    position: relative;
-    padding-top: 20px;
-    width: 996px;
-    height: 327px;
-    margin: auto;
-}
-
-.section-header {
-    padding-left: 40px;
-}
-
-section {
-    width: 632px;
-    margin: 0 auto;
-    margin-top: 24px;
-    text-align: center;
-}
-
-section img {
-    float: left;
-    margin-right: 40px;
-}
-
-section p {
-    text-align: justify;
-}
-
-main {
-    float: left;
-    width: 664px;
-    height: 100%;
-}
-
-main hr {
-    margin-left: 40px;
-}
-
-article {
-    padding-left: 40px;
-}
-
-article p {
-    text-align: justify;
-}
-
-aside {
-    float: right;
-    width: 332px;
-    height: 100%;
-}
-
-aside img {
-    padding-left: 84px;
 }
 
 .work-row {
@@ -280,12 +267,25 @@ aside img {
     float: right;
 }
 
-.splash-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 450px;
-    height: 303px;
-    margin-left: -225px; /* Half the width */
-    margin-top: -151.5px; /* Half the height */
+.my-work-header {
+    padding-left: 40px;
+}
+
+section.transcriptions {
+    width: 632px;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+section.transcriptions h1 {
+    text-align: center;
+}
+
+section.transcriptions p {
+    text-align: left;
+}
+
+section.transcriptions img {
+    float: left;
+    margin-right: 40px;
 }

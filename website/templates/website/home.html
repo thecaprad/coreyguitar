@@ -2,27 +2,27 @@
 {% load static %}
 
 {% block content %}
-<div class="hero"></div>
-<div class="content">
+<div class="home-banner"></div>
+<section class="content">
     <main>
-        <article>
+        <article class="home-copy">
             <h1>Hello and welcome to my personal website</h1>
 
             <p>My name is Corey Richardson and I am a guitarist and web developer in Chicago, IL.</p>
 
             <p>I’ve played guitar for some famous people and productions, as well as for many unfamous people and productions. I enjoy them both, and would be glad to play for you.</p>
                 
-            <p>Much of my time is spent as the content director for Soundslice.com — a company that makes web-based music eduction tools.</p>
+            <p>Much of my time is spent as the content director for <a href="https://www.soundslice.com">Soundslice</a>, a company that makes web-based music eduction tools.</p>
         </article>
         <hr>
-        <article>
+        <article class="home-copy">
             <h1>Contact and work samples</h1>
 
-            <p>To get in touch, send me an email at coreycr[at]hey.com. For samples of my work playing music, click <a href="https://www.youtube.com/user/captainrad/featured">here</a>. For code, click <a href="https://github.com/thecaprad/">here</a>.</p>
+            <p>To get in touch, send me an email at coreycr[at]hey.com. For samples of my work playing music, see the <a href="{% url 'website:my_work' %}">“My work”</a> page. For code, click <a href="https://github.com/thecaprad/">here</a>.</p>
         </article>
     </main>
     <aside>
         <img src="{% static 'website/images/chord-diagram-for-home.png' %}" alt="Chord diagram">
     </aside>
-</div>
+</section>
 {% endblock %}
