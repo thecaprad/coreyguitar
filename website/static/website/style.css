@@ -6,12 +6,22 @@ body, html {
     margin-left: 0;
     margin-right: 0;
     background-color: #ffffff;
+    font-size: 16px;
 }
 
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 16pt;
+    font-size: 1.313em;
+    color: #000000;
+    margin-top: .3em;
+    margin-bottom: .3em;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.125em;
     color: #000000;
     margin-top: .3em;
     margin-bottom: .3em;
@@ -19,26 +29,26 @@ h1 {
 
 h1.nav-title {
     float: left;
-    padding: 7px;
+    padding: .438em;
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
-    font-size: 13pt;
+    font-size: 1.063em;
 }
 
 p, li {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125em;
+    line-height: 1.5em;
     color: #000000;
 }
 
 p a, li a {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125em;
+    line-height: 1.5em;
     text-decoration: none;
     color: #0d66b0;
     font-weight: 500;
@@ -51,10 +61,10 @@ p b {
 nav a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 12pt;
+    font-size: 1em;
     text-decoration: none;
     color: #000000;
-    padding-inline-start: 14pt;
+    padding-inline-start: 1.125em;
 }
 
 hr {
@@ -216,7 +226,7 @@ p.credit {
     color: #0d66b0;
     font-weight: 100;
     font-style: oblique;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .media-info hr {
@@ -288,4 +298,42 @@ section.transcriptions p {
 section.transcriptions img {
     float: left;
     margin-right: 40px;
+}
+
+/* blog */
+
+.blog-banner {
+    height: 302px;
+    width: 996px;
+    margin: auto;
+    background-image: url("images/blog-banner.png");
+}
+
+article.blog-entry {
+    width: 75%;
+    margin: 0 auto;
+}
+
+article.blog-entry > h1 {
+    font-size: 2.188em;
+    line-height: 1.7em;
+    text-align: center;
+}
+
+article.blog-entry > h2 {
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+}
+
+article.blog-entry > h3 {
+    font-size: 1.375em;
+    line-height: 1.875em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+article.blog-entry > p {
+    font-size: 1.313em;
+    line-height: 1.875em;
 }
