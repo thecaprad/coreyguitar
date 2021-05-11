@@ -1,0 +1,12 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="blog-banner"></div>
+<section class="content">
+    <article class="blog-entry">
+        <h1>{{ entry.title }}</h1>
+        {{ entry.content|safe }}
+    </article>
+</section>
+{% endblock %}
