@@ -6,22 +6,30 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{% static 'website/style.css' %}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="{% static 'website/js/base.js' %}"></script>
     <title>Corey Richardson | Chicago, IL</title>
 </head>
 
 <body>
     <nav>
-        <h1 class="nav-title">Corey Richardson</h1>
-        <ul>
-            <li><a href="{% url 'website:index' %}">Home</a></li>
-            <li><a href="{% url 'website:my_work' %}">My work</a></li>
-            <!-- <li><a href="#">Bio</a></li>
-            <li><a href="#">Blog</a></li> -->
-        </ul>
+        <a href="{% url 'website:index' %}">Corey Richardson</a>
+        <div id="links">
+            <a href="{% url 'website:index' %}">Home</a>
+            <a href="{% url 'website:my_work' %}">My work</a>
+            <!-- <a href="#">Bio</a>
+            <a href="#">Blog</a> -->
+        </div>
+        <div id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
-    <!-- Block content -->
     {% block content %}
     {% endblock %}
+    <footer>
+        <img src="{% static 'website/images/chord-diagram-for-home.png' %}" alt="Chord diagram">
+    </footer>
 </body>
 </html>

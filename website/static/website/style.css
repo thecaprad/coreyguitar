@@ -1,21 +1,17 @@
 /* BASE */
 
 body, html {
-    height: 100%;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    background-color: #ffffff;
     font-size: 16px;
+    background-color: #ffffff;
+    margin: 0;
 }
 
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    font-size: 1.313em;
+    font-size: 1.5em;
     color: #000000;
-    margin-top: .3em;
-    margin-bottom: .3em;
+    margin: 0;
 }
 
 h2 {
@@ -27,10 +23,6 @@ h2 {
     margin-bottom: .3em;
 }
 
-h1.nav-title {
-    float: left;
-    padding: .438em;
-}
 
 h3 {
     font-family: 'Open Sans', sans-serif;
@@ -39,94 +31,228 @@ h3 {
 }
 
 p, li {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.125em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
     line-height: 1.5em;
     color: #000000;
 }
 
 p a, li a {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.125em;
-    line-height: 1.5em;
+    color: #246cbe;
     text-decoration: none;
-    color: #0d66b0;
-    font-weight: 500;
 }
 
 p b {
     font-weight: 600;
 }
 
-nav a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 1em;
-    text-decoration: none;
-    color: #000000;
-    padding-inline-start: 1.125em;
-}
-
 hr {
     border: none;
     height: 1px;
-    color: #979797;
     background-color: #979797;
 }
 
 nav {
-    margin: auto;
-    width: 996px;
     overflow: hidden;
-}
-
-nav ul {
-    float: right;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-section.content {
     position: relative;
-    padding-top: 20px;
-    width: 996px;
-    height: 327px;
-    margin: auto;
+}
+
+nav a {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: block;
+    padding-inline-start: 0;
+}
+
+#links {
+    display: None;
+}
+
+#links.active {
+    display: block;
+}
+
+#hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+#hamburger > * {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+@media screen and (min-width: 700px) {
+    body, html {
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav {
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    
+    #links {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+
+    nav a {
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1em;
+        text-decoration: none;
+        color: #000000;
+        padding-inline-start: 1.125em;
+    }
+
+    /* Corey Richardson 'logo.' */
+    nav > a {
+        font-size: 1.4em;
+        float: left;
+        padding-inline-start: 0;
+    }
+
+    #links a:last-child {
+        padding-inline-end: 0;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    h1 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.313em;
+        color: #000000;
+        margin-top: .3em;
+        margin-bottom: .3em;
+    }
+
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.125em;
+        color: #000000;
+        margin-top: .3em;
+        margin-bottom: .3em;
+    }
+
+
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        font-size: 1.063em;
+    }
+
+    p, li {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        color: #000000;
+    }
+
+    p a, li a {
+        color: #246cbe;
+        text-decoration: none;
+    }
+
+    p b {
+        font-weight: 600;
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+        background-color: #979797;
+    }
 }
 
 /* HOME */
 
-.home-banner {
-    height: 492.39px;
-    width: 996px;
-    margin: auto;
-    background-image: url("images/root-beer-for-home.png");
-}
-
 main {
-    float: left;
-    width: 664px;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
 }
 
-main hr {
-    margin-left: 40px;
+#home-banner {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
 }
 
-article.home-copy {
-    padding-left: 40px;
+main section {
+    display: block;
+    margin: 3%;
 }
 
-aside {
-    float: right;
-    width: 332px;
-    height: 100%;
+section aside img {
+    display: none;
 }
 
-aside img {
-    padding-left: 84px;
+footer img {
+    display: block;
+    width: 25%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        width: 70%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    #home-banner {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2%;
+    }
+
+    main section {
+        margin: 0;
+    }
+
+    main article {
+        float: left;
+        width: 70%;
+    }
+
+    main aside {
+        float: right;
+        width: 25%;
+    }
+
+    section aside img {
+        display: block;
+        width: 80%;
+        height: auto;
+        float: right;
+    }
+
+    footer {
+        display: none;
+    }
 }
 
 /* MY-WORK */

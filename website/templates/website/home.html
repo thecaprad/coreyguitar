@@ -2,9 +2,9 @@
 {% load static %}
 
 {% block content %}
-<div class="home-banner"></div>
-<section class="content">
-    <main>
+<main>
+    <img id="home-banner" src="{% static 'website/images/root-beer-for-home.png' %}">
+    <section>
         <article class="home-copy">
             <h1>Hello and welcome to my personal website</h1>
 
@@ -13,16 +13,18 @@
             <p>I’ve played guitar for some famous people and productions, as well as for many unfamous people and productions. I enjoy them both, and would be glad to play for you.</p>
                 
             <p>Much of my time is spent as the content director for <a href="https://www.soundslice.com">Soundslice</a>, a company that makes web-based music eduction tools.</p>
+            <hr></hr>
         </article>
-        <hr>
+        <aside>
+            <img src="{% static 'website/images/chord-diagram-for-home.png' %}" alt="Chord diagram">
+        </aside>
+    </section>
+    <section>
         <article class="home-copy">
             <h1>Contact and work samples</h1>
 
             <p>To get in touch, send me an email at coreycr[at]hey.com. For samples of my work playing music, see the <a href="{% url 'website:my_work' %}">“My work”</a> page. For code, click <a href="https://github.com/thecaprad/">here</a>.</p>
         </article>
-    </main>
-    <aside>
-        <img src="{% static 'website/images/chord-diagram-for-home.png' %}" alt="Chord diagram">
-    </aside>
-</section>
+    </section>
+</main>
 {% endblock %}
