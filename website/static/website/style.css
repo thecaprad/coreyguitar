@@ -210,7 +210,7 @@ section aside img {
     display: none;
 }
 
-footer img {
+#mobile-diagram {
     display: block;
     width: 25%;
     margin: 0 auto;
@@ -250,9 +250,10 @@ footer img {
         float: right;
     }
 
-    footer {
+    #mobile-diagram {
         display: none;
     }
+
 }
 
 /* MY-WORK */
