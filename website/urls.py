@@ -6,5 +6,6 @@ app_name = 'website'
 urlpatterns = [
     path('', views.index, name='index'),
     path('my-work/', views.my_work, name='my_work'),
+    path('bio/', views.bio, name='bio'),
     path('blog/<int:id>/', views.blog_entry_detail, name='blog_entry_detail')
 ]

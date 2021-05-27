@@ -127,21 +127,27 @@ section aside img {
     display: block;
     position: relative;
     width: 99%;
-    margin: 0 auto;
+    margin: 3% auto;
     overflow: hidden;
 }
 
-.bio-left {
+.bio-row:nth-of-type(2) .bio-box-a {
     width: 46%;
     margin: 0 1.5%;
     float: left;
-
 }
 
-.bio-right {
+.bio-row:nth-of-type(2) .bio-box-b {
     width: 46%;
     margin: 0 1.5%;
     float: right;
+}
+
+.bio-box-a, .bio-box-b {
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .bio-row img {
@@ -284,6 +290,33 @@ section aside img {
     #mobile-diagram {
         display: none;
     }
+
+    /* BIO DESKTOP */
+
+    /* .bio-row {
+        display: block;
+        position: relative;
+        width: 99%;
+        margin: 3% auto;
+        overflow: hidden;
+    }
+
+    .bio-box-a {
+        width: 46%;
+        margin: 0 1.5%;
+        float: left;
+
+    }
+
+    .bio-box-b {
+        width: 46%;
+        margin: 0 1.5%;
+        float: right;
+    }
+
+    .bio-row img {
+        width: 100%;
+    } */
 }
 
 /* MY-WORK */

@@ -11,6 +11,9 @@ def index(request):
 def my_work(request):
     return render(request, 'website/my-work.html', {})
 
+def bio(request):
+    return render(request, 'website/bio.html', {})
+
 def blog_entry_detail(request, id):
     entry = get_object_or_404(BlogEntry, id=id)
     return render(request, 'website/entry.html', {'entry': entry})

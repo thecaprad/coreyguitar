@@ -1,0 +1,35 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+    <img id="home-banner" src="{% static 'website/images/bio-banner.png' %}">
+
+    <!-- Greeting -->
+    <section class="bio-row">
+        <div class="bio-box-a">
+            <h1>Bio</h1>
+            <p>A fast description of my years.</p>
+        </div>
+    </section>
+    <!-- First two pictures -->
+    <section class="bio-row">
+        <div class="bio-box-a">
+            <img src="{% static 'website/images/bio/blink.png' %}">
+        </div>
+        <div class="bio-box-b">
+            <img src="{% static 'website/images/bio/live.png' %}">
+        </div>
+    </section>
+    <!-- Growing up -->
+    <section class="bio-row">
+        <div class="bio-box-a">
+            <h2>Growing up</h2>
+            <p>I grew up in Illinois, born in the year of the Gameboy. My favorite things to do have always been playing with computers and guitars.</p>
+        </div>
+        <div class="bio-box-b">
+            <img src="{% static 'website/images/bio/kid-les-paul.png' %}">
+        </div>
+    </section>
+</main>
+{% endblock %}
