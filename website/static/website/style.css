@@ -40,8 +40,9 @@ p, li, figure {
 figure {
     font-size: .8em;
     font-style: italic;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    line-height: 1.6em;
 }
 
 p a, li a {
@@ -138,6 +139,10 @@ section aside img {
 }
 
 /* BIO MOBILE */
+
+#bio-content {
+    width: 100%;
+}
 
 .bio-row {
     display: block;
@@ -309,12 +314,30 @@ section aside img {
 
     /* BIO DESKTOP */
 
-    /* .bio-row {
+    #bio-content {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #bio-content p, #bio-content li {
+        font-size: .95em;
+        line-height: 1.5em;
+    }
+
+    #bio-content h2 {
+        margin-top: 0;
+    }
+
+    .bio-row {
         display: block;
         position: relative;
         width: 99%;
         margin: 3% auto;
         overflow: hidden;
+    }
+
+    .bio-row:first-of-type {
+        margin: 0 auto;
     }
 
     .bio-box-a {
@@ -332,7 +355,16 @@ section aside img {
 
     .bio-row img {
         width: 100%;
-    } */
+    }
+
+    /* The following two styles stagger the left/right placement of every other bio section. */
+    .bio-row:nth-of-type(3) .bio-box-a, .bio-row:nth-of-type(5) .bio-box-a, .bio-row:nth-of-type(7) .bio-box-a {
+        float: right;
+    }
+
+    .bio-row:nth-of-type(3) .bio-box-b, .bio-row:nth-of-type(5) .bio-box-b, .bio-row:nth-of-type(7) .bio-box-b {
+        float: left;
+    }
 }
 
 /* MY-WORK */
