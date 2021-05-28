@@ -116,6 +116,15 @@ main section {
     margin: 3%;
 }
 
+/* TODO delete this when done with Soundslice demo video */
+#lesson {
+    display: block;
+    position: relative;
+    width: 99%;
+    margin: 3% auto;
+    overflow: hidden;
+}
+
 /* HOME MOBILE */
 
 section aside img {

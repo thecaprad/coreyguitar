@@ -1,0 +1,26 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+<main>
+    <img id="home-banner" src="{% static 'website/images/blog-banner.png' %}">
+        <article id="lesson">
+            <h1>Hammer-off, sliding seconds riff (Cm)</h1>
+
+
+            <p>This is a through-composed solo I wrote around a lick stolen from a post on @jamesd2004's channel. I liked the lick so much that I thought I'd write something to put it in context.</p>
+            
+            <p>The secondary challenge here was to follow the same (awesome) backing track and to compliment it rhythmically.</p>
+            
+            <p>
+
+            <!-- Add Soundslice embed -->
+            <iframe src="https://www.soundslice.com/slices/fslfc/embed/?force_top_video=1&fretboard=1&lang=es" width="100%" height="700" frameBorder="0" allowfullscreen></iframe>
+
+            </p>
+            <p><a href="https://youtu.be/4O1MGOu9oD8">Backing track</a></p>
+            <hr></hr>
+        </article>
+    <img id="mobile-diagram" src="{% static 'website/images/chord-diagram-for-home.png' %}" alt="Chord diagram">
+</main>
+{% endblock %}
