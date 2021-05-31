@@ -6,27 +6,37 @@
 
 <main>
     <img id="banner" src="{% static 'website/images/work-banner.png' %}">
-    <div id="work-content">
+    <section id="work-content">
         <div class="work-row">
             <h1>My work</h1>
             <p>Click on a thumbnail to learn more about a project.</p>
         </div>
+        <!-- First row -->
         <div class="work-row">
             <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/1-gardens.png' %}" alt="Solo acoustic guitar"></a>
             <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/2-shot-in-the-dark.png' %}" alt="Animation music"></a>
             <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/3-assep.png' %}" alt="Soul EP"></a>
-            <!-- <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/1-gardens.png' %}" alt="Solo acoustic guitar"></a>
-            <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/2-shot-in-the-dark.png' %}" alt="Animation music"></a> -->
-            <!-- <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/3-assep.png' %}" alt="Soul EP"></a> -->
         </div>
-    </div>
-</main>
-
-    <!-- <section class="transcriptions">
-        <h1>✏️ Transcriptions 🎼</h1>
+        <!-- Second row -->
+        <div class="work-row">
+            <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/4-sunny.png' %}" alt="Sunny"></a>
+            <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/5-potter.png' %}" alt="A Very Potter Sequel"></a>
+            <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/6-danny-boy.png' %}" alt="Danny Boy"></a>
+        </div>
+        <!-- Third row -->
+        <div class="work-row">
+            <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/7-getaway.png' %}" alt="Soul band 2"></a>
+            <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/8-darren.png' %}" alt="Darren Criss"></a>
+            <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails/9-ani.png' %}" alt="Parody musical"></a>
+        </div>
+    </section>
+    <!-- Transcriptions link -->
+    <section id ="transcriptions">
+        <h2>✏️ Transcriptions 🎼</h2>
         <p>    
             <img src="{% static 'website/images/ss-logo.png' %}" alt="Soundslice profile">
             I’ve got <em>loads</em> of musical transcriptions on <a href="http://www.soundslice.com/users/corey">my profile</a> at soundslice.com. I love to transcibe guitar parts from pop music, folk tunes and jazz improvisations. Hopefully I’ve done some hard work for you!
         </p>
-    </section> -->
+    </section>
+</main>
 {% endblock %}
