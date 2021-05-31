@@ -201,15 +201,14 @@ section aside img {
     display: inline-block;
     width: 30%;
     margin: 1%;
-    background-color: yellow;
 }
 
 .work-img {
     display: inline-block;
     object-fit: cover;
     object-position: 20% 10%;
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
 }
 
 /* DESKTOP QUERY */
