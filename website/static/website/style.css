@@ -183,6 +183,7 @@ section aside img {
 
 #work-content {
     width: 100%;
+    margin: 0 auto;
 }
 
 .work-row {
@@ -209,6 +210,23 @@ section aside img {
     object-position: 20% 10%;
     width: 100px;
     height: 100px;
+}
+
+#transcriptions {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#transcriptions p {
+    text-align: left;
+    font-size: .9em;
+}
+
+#transcriptions p img {
+    float: left;
+    width: 20%;
+    margin: 8%;
 }
 
 /* DESKTOP QUERY */
