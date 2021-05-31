@@ -179,6 +179,39 @@ section aside img {
     width: 100%;
 }
 
+/* MY WORK MOBILE */
+
+#work-content {
+    width: 100%;
+}
+
+.work-row {
+    display: block;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.work-row:first-of-type {
+    text-align: left;
+}
+
+.worksamplebut {
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    background-color: yellow;
+}
+
+.work-img {
+    display: inline-block;
+    object-fit: cover;
+    object-position: 20% 10%;
+    width: 100%;
+    height: 100%;
+}
+
 /* DESKTOP QUERY */
 @media screen and (min-width: 820px) {
 
@@ -373,7 +406,7 @@ section aside img {
 
 /* MY-WORK */
 
-.my-work-banner {
+/* .my-work-banner {
     height: 302px;
     width: 996px;
     margin: auto;
@@ -540,7 +573,7 @@ section.transcriptions p {
 section.transcriptions img {
     float: left;
     margin-right: 40px;
-}
+} */
 
 /* blog */
 
