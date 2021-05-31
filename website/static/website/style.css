@@ -110,7 +110,7 @@ main {
     margin: 0 auto;
 }
 
-#home-banner {
+#banner {
     width: 100%;
     height: auto;
     margin-bottom: 2%;
@@ -285,7 +285,7 @@ section aside img {
         margin: 0 auto;
     }
 
-    #home-banner {
+    #banner {
         width: 100%;
         height: auto;
         margin-bottom: 2%;
@@ -543,13 +543,6 @@ section.transcriptions img {
 }
 
 /* blog */
-
-.blog-banner {
-    height: 302px;
-    width: 996px;
-    margin: auto;
-    background-image: url("images/blog-banner.png");
-}
 
 article.blog-entry {
     width: 75%;
