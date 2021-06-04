@@ -1,27 +1,24 @@
 function handleWorkClick(i) {
     document.getElementById('overlay').classList.toggle('active');
-    var marquee = document.getElementById('marquee');
-    marquee.classList.toggle('active');
-    turnOffMarqueeChildren();
-    // turn on work sample with matching id
-    marquee.children[i].style.display = "block";
+    document.getElementsByTagName('body')[0].style.overflow = "hidden";
+    turnOffArticles();
+    // turn on work articles with matching id
+    document.getElementById('work-articles').children[i].style.display = "block";
 }
 
-function turnOffMarquee() {
+function turnOffOverlay() {
     var overlay = document.getElementById('overlay');
     if (overlay.className == 'active') {
         overlay.classList.toggle('active');
+        document.getElementsByTagName('body')[0].style.overflow = "scroll";
     }
-    var marquee = document.getElementById('marquee');
-    if (marquee.className == 'active') {
-        marquee.classList.toggle('active');
-    }
-    turnOffMarqueeChildren();
+    turnOffArticles();
 }
 
-function turnOffMarqueeChildren() {
-    for (it = 0; it < marquee.children.length; it++) {
-        marquee.children[it].style.display = 'none';
+function turnOffArticles() {
+    var articles = document.getElementById('work-articles').children;
+    for (it = 0; it < articles.length; it++) {
+        articles[it].style.display = 'none';
     }
 }
 
@@ -35,23 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
-    var xEls = document.getElementsByClassName('x');
-    for (let i = 0; i < workEls.length; i++) {
-        xEls[i].addEventListener('click', function(e) {
-            e.preventDefault();
-            document.getElementById('overlay').classList.toggle('active');
-            document.getElementById('marquee').classList.toggle('active');
-            turnOffMarqueeChildren();
-        })
-    }
-
     document.getElementById('overlay').addEventListener('click', function(e) {
-        turnOffMarquee();
+        turnOffOverlay();
     })
 
     document.addEventListener('keydown', function(e) {
         if (e.key === "Escape") {
-            turnOffMarquee();
+            turnOffOverlay();
         }
     })
 });

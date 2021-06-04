@@ -45,6 +45,10 @@ figure {
     line-height: 1.6em;
 }
 
+figure img {
+    width: 100%;
+}
+
 p a, li a {
     color: #246cbe;
     text-decoration: none;
@@ -225,8 +229,38 @@ section aside img {
 
 #transcriptions p img {
     float: left;
-    width: 20%;
+    width: 13%;
     margin: 8%;
+}
+
+#overlay {
+    position: fixed;
+    display: block;
+    top: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.938);
+    z-index: 100;
+    transition: top .7s;
+}
+
+#overlay.active {
+    top: 0%;
+}
+
+#work-articles {
+    text-align: center;
+    height: 100%;
+}
+
+#work-articles article {
+    height: 100%;
+}
+
+.work-copy {
+    text-align: left;
+    overflow-y: scroll;
+    height: 55%;
 }
 
 /* DESKTOP QUERY */

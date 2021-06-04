@@ -6,6 +6,13 @@
 
 <main>
     <img id="banner" src="{% static 'website/images/work-banner.png' %}">
+    <div id="overlay">
+        <section id="work-articles">
+            {% include 'website/work-includes/gardens.html' %}
+            {% include 'website/work-includes/shot-in-the-dark.html' %}
+            {% include 'website/work-includes/EP.html' %}
+        </section>
+    </div>
     <section id="work-content">
         <div class="work-row">
             <h1>My work</h1>
