@@ -250,7 +250,7 @@ section aside img {
 
 #work-articles {
     text-align: center;
-    height: 100%;
+    height: 89%;
 }
 
 #work-articles article {
@@ -261,6 +261,12 @@ section aside img {
     text-align: left;
     overflow-y: scroll;
     height: 55%;
+}
+
+#work-close {
+    display: block;
+    text-align: center;
+    font-size: .9em;
 }
 
 /* DESKTOP QUERY */

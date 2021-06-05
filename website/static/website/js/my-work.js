@@ -12,7 +12,6 @@ function turnOffOverlay() {
         overlay.classList.toggle('active');
         document.getElementsByTagName('body')[0].style.overflow = "scroll";
     }
-    turnOffArticles();
 }
 
 function turnOffArticles() {
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
 
-    document.getElementById('overlay').addEventListener('click', function(e) {
+    document.getElementById('work-close').addEventListener('click', function(e) {
         turnOffOverlay();
     })
 
