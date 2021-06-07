@@ -22,6 +22,8 @@ function turnOffArticles() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    turnOffArticles();
+
     var workEls = document.getElementsByClassName('worksamplebut');
 
     for (let i = 0; i < workEls.length; i++) {
