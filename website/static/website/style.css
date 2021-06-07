@@ -253,14 +253,20 @@ section aside img {
     height: 89%;
 }
 
-#work-articles article {
-    height: 100%;
+.work-essay {
+    height: 96%;
+    overflow: scroll;
+    text-align: center;
+    margin-top: 2%;
 }
 
-.work-copy {
+.work-essay p {
     text-align: left;
-    overflow-y: scroll;
-    height: 55%;
+    width: 98%;
+}
+
+.work-essay p:first-of-type {
+    text-align: center;
 }
 
 #work-close {
@@ -276,9 +282,7 @@ section aside img {
 
     body, html {
         height: 100%;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0;
     }
 
     nav {
@@ -381,8 +385,9 @@ section aside img {
         margin-bottom: 2%;
     }
 
-    main section {
-        margin: 0;
+    #home-content {
+        width: 85%;
+        margin: 0 auto;
     }
 
     main article {
@@ -459,178 +464,76 @@ section aside img {
     .bio-row:nth-of-type(3) .bio-box-b, .bio-row:nth-of-type(5) .bio-box-b, .bio-row:nth-of-type(7) .bio-box-b {
         float: left;
     }
+
+    /* MY-WORK DESKTOP */
+
+    #work-content {
+        width: 85%;
+        margin: 0 auto;
+    }    
+
+    .work-row {
+        width: 100%;
+    }
+
+    .worksamplebut {
+        display: inline-block;
+        width: 27%;
+        margin: .5%;
+    }
+
+    .work-img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* The following staggers the width of the thumbnails so that one in each row is extra-wide. */
+    .work-row:nth-of-type(2) .worksamplebut:nth-of-type(2), .work-row:nth-of-type(3) .worksamplebut:nth-of-type(1), .work-row:nth-of-type(4) .worksamplebut:nth-of-type(3) {
+        width: 40%;
+    }
+
+    #overlay {
+        width: 70%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    #work-articles {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .work-essay {
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .work-essay iframe {
+        width: 70%;
+        height: 330px;
+    }
+
+    .work-essay figure {
+        width: 70%;
+    }
+
+    #transcriptions {
+        width: 60%;
+        margin-bottom: 2%;
+    }
+    
+    #transcriptions p {
+        text-align: left;
+        font-size: .9em;
+    }
+    
+    #transcriptions p img {
+        float: left;
+        width: 12%;
+        margin: 0 5% 0 0;
+    }
 }
-
-/* MY-WORK */
-
-/* .my-work-banner {
-    height: 302px;
-    width: 996px;
-    margin: auto;
-    background-image: url("images/moving-boxes-for-work.png");
-}
-
-#overlay.active {
-    display: block;
-}
-
-#overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-  }
-
-
-#marquee.active {
-    display: block;
-}
-#marquee {
-    display: none;
-    position: fixed;
-    background-color: #ffffff;
-    width: 1360px;
-    height: 538px;
-    left: 50%;
-    top: 50%;
-    margin-left: -680px;
-    margin-top: -269px;
-    z-index: 2;
-    overflow: hidden;
-}
-
-#closemarqueebut {
-    display: block;
-    float: right;
-    z-index: 3;
-    position: relative;
-}
-
-.media {
-    float: left;
-    height: 100%;
-    width: 956px;
-}
-
-article.media-info {
-    float: right;
-    height: 538px;
-    width: 404px;
-}
-
-.title {
-    display: block;
-    width: 404px;
-    padding-top: 8px;
-}
-
-.title h1 {
-    float: left;
-    width: 80%;
-    padding-left: 20px;
-}
-
-.title .x {
-    float: right;
-    color: #000000;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.title p {
-    float: right;
-    padding-right: 20px;
-}
-
- .copy {
-    display: block;
-    height: 460px;
-    overflow: scroll;
-}
-
-p.credit {
-    color: #0d66b0;
-    font-weight: 100;
-    font-style: oblique;
-    font-size: 1.25em;
-}
-
-.media-info hr {
-    margin-left: 20px;
-    margin-right: 20px;
-    clear: both;
-}
-
-.copy > * {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.copy ul {
-    margin-left: 20px;
-}
-
-.copy figure {
-    margin: auto;
-}
-
-.copy figure img {
-    width: 100%;
-}
-
-.work-row {
-    width: 996px;
-    height: 237px;
-    margin-top: 20px;
-    display: block;
-}
-
-.work-row a {
-    display: inline-block;
-}
-
-.work-row > a:first-child {
-    padding-left: 40px;
-    float: left;
-}
-
-.work-row > a:nth-child(2) {
-    margin-left: 20px;
-}
-
-.work-row > a:last-child {
-    padding-right: 40px;
-    float: right;
-}
-
-.my-work-header {
-    padding-left: 40px;
-}
-
-section.transcriptions {
-    width: 632px;
-    margin: 0 auto;
-    margin-top: 24px;
-}
-
-section.transcriptions h1 {
-    text-align: center;
-}
-
-section.transcriptions p {
-    text-align: left;
-}
-
-section.transcriptions img {
-    float: left;
-    margin-right: 40px;
-} */
 
 /* blog */
 

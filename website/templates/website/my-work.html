@@ -8,15 +8,15 @@
     <img id="banner" src="{% static 'website/images/work-banner.png' %}">
     <div id="overlay">
         <section id="work-articles">
-            {% include 'website/work-includes/gardens.html' %}
-            {% include 'website/work-includes/shot-in-the-dark.html' %}
-            {% include 'website/work-includes/EP.html' %}
-            {% include 'website/work-includes/sunny.html' %}
-            {% include 'website/work-includes/avps.html' %}
-            {% include 'website/work-includes/danny-boy.html' %}
-            {% include 'website/work-includes/getaway.html' %}
-            {% include 'website/work-includes/i-still-think.html' %}
-            {% include 'website/work-includes/ani.html' %}
+            <article class="work-essay">{% include 'website/work-includes/gardens.html' %}</article>
+            <article class="work-essay">{% include 'website/work-includes/shot-in-the-dark.html' %}</article>
+            <article class="work-essay">{% include 'website/work-includes/EP.html' %}</article>
+            <article class="work-essay">{% include 'website/work-includes/sunny.html' %}</article>
+            <article class="work-essay">{% include 'website/work-includes/avps.html' %}</article>
+            <article class="work-essay">{% include 'website/work-includes/danny-boy.html' %}</article>
+            <article class="work-essay">{% include 'website/work-includes/getaway.html' %}</article>
+            <article class="work-essay">{% include 'website/work-includes/i-still-think.html' %}</article>
+            <article class="work-essay">{% include 'website/work-includes/ani.html' %}</article>
         </section>
         <hr style="width: 20%">
         <p id="work-close"><a href="#">(Close)</a></p>
@@ -46,7 +46,7 @@
         </div>
     </section>
     <!-- Transcriptions link -->
-    <section id ="transcriptions">
+    <section id="transcriptions">
         <h2>✏️ Transcriptions 🎼</h2>
         <p>    
             <img src="{% static 'website/images/ss-logo.png' %}" alt="Soundslice profile">
