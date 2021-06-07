@@ -255,9 +255,10 @@ section aside img {
 
 .work-essay {
     height: 96%;
-    overflow: scroll;
     text-align: center;
     margin-top: 2%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .work-essay p, .work-essay ul {
@@ -506,7 +507,6 @@ section aside img {
 
     .work-essay {
         width: 100%;
-        overflow: scroll;
     }
 
     .work-essay iframe {
