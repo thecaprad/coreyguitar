@@ -260,7 +260,7 @@ section aside img {
     margin-top: 2%;
 }
 
-.work-essay p {
+.work-essay p, .work-essay ul {
     text-align: left;
     width: 98%;
 }
