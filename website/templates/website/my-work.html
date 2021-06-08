@@ -2,11 +2,13 @@
 {% load static %}
 
 {% block content %}
+<script src="{% static 'website/js/youtube.js' %}"></script>
 <script src="{% static 'website/js/my-work.js' %}"></script>
 
 <main>
     <img id="banner" src="{% static 'website/images/work-banner.png' %}">
     <div id="overlay">
+        <p id="work-close"><a href="#">(Close)</a></p>
         <section id="work-articles">
             <article class="work-essay">{% include 'website/work-includes/gardens.html' %}</article>
             <article class="work-essay">{% include 'website/work-includes/shot-in-the-dark.html' %}</article>
@@ -18,8 +20,6 @@
             <article class="work-essay">{% include 'website/work-includes/i-still-think.html' %}</article>
             <article class="work-essay">{% include 'website/work-includes/ani.html' %}</article>
         </section>
-        <hr style="width: 20%">
-        <p id="work-close"><a href="#">(Close)</a></p>
     </div>
     <section id="work-content">
         <div class="work-row">

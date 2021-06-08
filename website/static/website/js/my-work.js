@@ -7,6 +7,7 @@ function handleWorkClick(i) {
 }
 
 function turnOffOverlay() {
+    pauseVideo();
     var overlay = document.getElementById('overlay');
     if (overlay.className == 'active') {
         overlay.classList.toggle('active');
