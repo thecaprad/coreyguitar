@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.getElementById('work-close').addEventListener('click', function(e) {
+        e.preventDefault();
         turnOffOverlay();
     })
 
