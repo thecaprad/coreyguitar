@@ -280,7 +280,7 @@ section aside img {
     /* MY WORK LANDSCAPE */
 
     #work-content {
-        95%;
+        width: 95%;
     }
 
     .work-row {
