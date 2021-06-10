@@ -33,13 +33,8 @@ function onPlayerReady() {
 }
 
 function pauseVideo(){
-    playersArr[0].pauseVideo();
-    playersArr[1].pauseVideo();
-    playersArr[2].pauseVideo();
-    playersArr[3].pauseVideo();
-    playersArr[4].pauseVideo();
-    playersArr[5].pauseVideo();
-    playersArr[6].pauseVideo();
-    playersArr[7].pauseVideo();
-    playersArr[8].pauseVideo();
+    // Pauses all video players on page.
+    for (i = 0; i < 9; i++){
+        playersArr[i].pauseVideo();
+    }
 }
