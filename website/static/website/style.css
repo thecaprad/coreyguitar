@@ -4,9 +4,6 @@ body, html {
     font-size: 16px;
     background-color: #ffffff;
     margin: 0;
-    min-height: -webkit-fill-available;
-    min-height: -moz-available;
-    min-height: fill-available;
 }
 
 h1 {
@@ -186,7 +183,7 @@ section aside img {
     width: 100%;
 }
 
-/* MY WORK MOBILE */
+/* MY-WORK MOBILE */
 
 #work-content {
     width: 100%;
@@ -271,6 +268,11 @@ section aside img {
     text-align: center;
 }
 
+.work-essay iframe {
+    width: 100%;
+    height: 30%;
+}
+
 #work-close {
     display: block;
     text-align: center;
@@ -306,6 +308,12 @@ section aside img {
     .work-row:nth-of-type(2) .worksamplebut:nth-of-type(2), .work-row:nth-of-type(3) .worksamplebut:nth-of-type(1), .work-row:nth-of-type(4) .worksamplebut:nth-of-type(3) {
         width: 40%;
     }
+
+    .work-essay iframe {
+        width: 100%;
+        height: 330px;
+    }
+
 }
 
 /* DESKTOP QUERY */
@@ -521,8 +529,8 @@ section aside img {
     }
 
     .work-essay iframe {
-        width: 70%;
-        height: 330px;
+        width: 100%;
+        height: 400px;
     }
 
     .work-essay figure {
