@@ -227,10 +227,8 @@ section aside img {
     font-size: .9em;
 }
 
-#transcriptions p img {
-    float: left;
-    width: 13%;
-    margin: 8%;
+#transcriptions img {
+    width: 15%;
 }
 
 #overlay {
@@ -274,6 +272,37 @@ section aside img {
     display: block;
     text-align: center;
     font-size: .9em;
+}
+
+/* LANDSCAPE QUERY */
+@media screen and (min-width: 660px) {
+
+    /* MY WORK LANDSCAPE */
+
+    #work-content {
+        95%;
+    }
+
+    .work-row {
+        width: 100%;
+    }
+
+    .worksamplebut {
+        display: inline-block;
+        width: 27%;
+        margin: .5%;
+    }
+
+    .work-img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* The following staggers the width of the thumbnails so that one in each row is extra-wide. */
+    .work-row:nth-of-type(2) .worksamplebut:nth-of-type(2), .work-row:nth-of-type(3) .worksamplebut:nth-of-type(1), .work-row:nth-of-type(4) .worksamplebut:nth-of-type(3) {
+        width: 40%;
+    }
 }
 
 /* DESKTOP QUERY */
@@ -387,7 +416,7 @@ section aside img {
     }
 
     #home-content {
-        width: 85%;
+        width: 95%;
         margin: 0 auto;
     }
 
@@ -471,27 +500,6 @@ section aside img {
     #work-content {
         width: 85%;
         margin: 0 auto;
-    }    
-
-    .work-row {
-        width: 100%;
-    }
-
-    .worksamplebut {
-        display: inline-block;
-        width: 27%;
-        margin: .5%;
-    }
-
-    .work-img {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-    }
-
-    /* The following staggers the width of the thumbnails so that one in each row is extra-wide. */
-    .work-row:nth-of-type(2) .worksamplebut:nth-of-type(2), .work-row:nth-of-type(3) .worksamplebut:nth-of-type(1), .work-row:nth-of-type(4) .worksamplebut:nth-of-type(3) {
-        width: 40%;
     }
 
     #overlay {
@@ -528,10 +536,8 @@ section aside img {
         font-size: .9em;
     }
     
-    #transcriptions p img {
-        float: left;
-        width: 12%;
-        margin: 0 5% 0 0;
+    #transcriptions img {
+        width: 10%;
     }
 }
 
