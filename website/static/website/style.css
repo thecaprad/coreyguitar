@@ -4,6 +4,9 @@ body, html {
     font-size: 16px;
     background-color: #ffffff;
     margin: 0;
+    min-height: -webkit-fill-available;
+    min-height: -moz-available;
+    min-height: fill-available;
 }
 
 h1 {
