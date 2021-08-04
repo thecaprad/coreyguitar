@@ -427,8 +427,12 @@ section aside img {
     }
 
     #home-content {
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
+    }
+
+    main section {
+        margin: 0;
     }
 
     main article {
