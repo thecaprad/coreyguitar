@@ -7,7 +7,9 @@ function handleWorkClick(i) {
 }
 
 function turnOffOverlay() {
-    pauseVideo();
+    if (window.location.href.endsWith("music/")) {
+        pauseVideo();
+    }
     var overlay = document.getElementById('overlay');
     if (overlay.className == 'active') {
         overlay.classList.toggle('active');

@@ -4,7 +4,6 @@
 {% block title %} Corey Richardson | My work {% endblock %}
 
 {% block content %}
-<script src="{% static 'website/js/youtube.js' %}"></script>
 <script src="{% static 'website/js/my-work.js' %}"></script>
 
 <main>
@@ -12,8 +11,9 @@
     <div id="overlay">
         <p id="work-close"><a href="#">(Close)</a></p>
         <section id="work-articles">
-            <!-- <article class="work-essay">{% include 'website/work-includes/gardens.html' %}</article>
-            <article class="work-essay">{% include 'website/work-includes/shot-in-the-dark.html' %}</article> -->
+            <article class="work-essay">{% include 'website/work-includes/personal-site.html' %}</article>
+            <article class="work-essay">{% include 'website/work-includes/soundslice-api.html' %}</article>
+            <article class="work-essay">{% include 'website/work-includes/musicians-blog.html' %}</article>
         </section>
     </div>
     <section id="work-content">

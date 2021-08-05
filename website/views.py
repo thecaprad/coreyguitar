@@ -8,8 +8,8 @@ def splash(request):
 def index(request):
     return render(request, 'website/home.html', {})
 
-def my_work(request):
-    return render(request, 'website/my-work.html', {})
+def my_work_music(request):
+    return render(request, 'website/my-work-music.html', {})
 
 def my_work_code(request):
     return render(request, 'website/my-work-code.html', {})
