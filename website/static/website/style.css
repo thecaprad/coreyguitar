@@ -14,6 +14,20 @@ h1 {
     margin: 0;
 }
 
+h1 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1 .active {
+    text-decoration: none;
+    color: #246cbe;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+}
+
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
