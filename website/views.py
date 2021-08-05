@@ -11,6 +11,9 @@ def index(request):
 def my_work(request):
     return render(request, 'website/my-work.html', {})
 
+def my_work_code(request):
+    return render(request, 'website/my-work-code.html', {})
+
 def bio(request):
     return render(request, 'website/bio.html', {})
 

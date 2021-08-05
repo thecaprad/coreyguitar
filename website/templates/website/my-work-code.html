@@ -1,0 +1,36 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %} Corey Richardson | My work {% endblock %}
+
+{% block content %}
+<script src="{% static 'website/js/youtube.js' %}"></script>
+<script src="{% static 'website/js/my-work.js' %}"></script>
+
+<main>
+    <img id="banner" src="{% static 'website/images/work-banner-glasses.png' %}">
+    <div id="overlay">
+        <p id="work-close"><a href="#">(Close)</a></p>
+        <section id="work-articles">
+            <!-- <article class="work-essay">{% include 'website/work-includes/gardens.html' %}</article>
+            <article class="work-essay">{% include 'website/work-includes/shot-in-the-dark.html' %}</article> -->
+        </section>
+    </div>
+    <section id="work-content">
+        <div class="work-row">
+            <h1>My work</h1>
+            <p>Click on a thumbnail to learn more about a project.</p>
+        </div>
+        <!-- First row -->
+        <div class="work-row">
+            <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails-code/1-website.png' %}" alt="Personal website"></a>
+            <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails-code/2-api.png' %}" alt="Python API"></a>
+            <a href="#" class="worksamplebut"><img class="work-img" src="{% static 'website/images/work-thumbnails-code/3-frank.png' %}" alt="Musician's blog"></a>
+        </div>
+    </section>
+    <!-- Transcriptions link -->
+    <section id="transcriptions">
+        <a href="https://github.com/thecaprad"><img src="{% static 'website/images/github.svg' %}" height="35px" style="margin-top: 2%;"></a>
+    </section>
+</main>
+{% endblock %}
