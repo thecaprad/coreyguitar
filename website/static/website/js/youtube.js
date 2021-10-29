@@ -20,12 +20,16 @@ var playersArr = [player1, player2, player3, player4, player5, player6, player7,
 // YouTube function — onYouTubeIframeAPIReady.
 function onYouTubeIframeAPIReady() {
     playersArr.forEach(function(player, index) {
-        playersArr[index] = new YT.Player(('player-' + index), {
-            origin: 'https://www.coreyguitar.com',
-            events: {
-                'onReady': onPlayerReady
-            }
-        })
+        // 3 is excluded because the Sunny video has no YouTube iFrame.
+        // Yes, this is hacky.
+        if (index != 3) { 
+            playersArr[index] = new YT.Player(('player-' + index), {
+                origin: 'https://www.coreyguitar.com',
+                events: {
+                    'onReady': onPlayerReady
+                }
+            })
+        }
     });
 }
 
@@ -35,6 +39,10 @@ function onPlayerReady() {
 function pauseVideo(){
     // Pauses all video players on page.
     for (i = 0; i < 9; i++){
-        playersArr[i].pauseVideo();
+        // 3 is excluded because the Sunny video has no YouTube iFrame.
+        // Yes, this is hacky.
+        if (i != 3) {
+            playersArr[i].pauseVideo();
+        }
     }
 }
