@@ -6,6 +6,7 @@
 <section class="content">
     <article class="blog-entry">
         <h1>{{ entry.title }}</h1>
+        <p id="entry-date">{{ entry.date|date:"M. j, Y" }}</p>
         {{ entry.content|safe }}
     </article>
 </section>

@@ -44,7 +44,7 @@ h3 {
     font-size: 1.063em;
 }
 
-p, li, figure {
+p, li, figure, blockquote, label {
     font-family: 'Raleway', sans-serif;
     font-size: 1.1em;
     line-height: 1.5em;
@@ -291,6 +291,68 @@ section aside img {
     display: block;
     text-align: center;
     font-size: .9em;
+}
+
+
+/* BLOG MOBILE */
+
+#entry-date {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #000000;
+    margin: 0;
+}
+
+.footnote {
+    vertical-align: super;
+    font-size: .7em;
+}
+
+#references {
+    list-style: none;
+}
+
+#references .footnote {
+    vertical-align: initial;
+    font-size: 1em;
+    padding-right: 6px;
+}
+
+article.blog-entry {
+    width: 85%;
+    margin: 0 auto;
+}
+
+article.blog-entry > h1 {
+    font-size: 2.188em;
+    line-height: 1.7em;
+    text-align: center;
+    color: #163441;
+}
+
+article.blog-entry > h2 {
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+    color: #163441;
+}
+
+article.blog-entry > h3 {
+    font-size: 1.375em;
+    line-height: 1.875em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+article.blog-entry > p {
+    font-size: 1.313em;
+    line-height: 1.875em;
+}
+
+blockquote {
+    border-left: 6px solid #163441;
+    padding-left: 15px;
 }
 
 /* LANDSCAPE QUERY */
@@ -573,35 +635,4 @@ section aside img {
     #transcriptions img {
         width: 10%;
     }
-}
-
-/* blog */
-
-article.blog-entry {
-    width: 85%;
-    margin: 0 auto;
-}
-
-article.blog-entry > h1 {
-    font-size: 2.188em;
-    line-height: 1.7em;
-    text-align: center;
-}
-
-article.blog-entry > h2 {
-    font-size: 1.5em;
-    line-height: 2em;
-    text-align: center;
-}
-
-article.blog-entry > h3 {
-    font-size: 1.375em;
-    line-height: 1.875em;
-    text-align: center;
-    text-decoration: underline;
-}
-
-article.blog-entry > p {
-    font-size: 1.313em;
-    line-height: 1.875em;
 }

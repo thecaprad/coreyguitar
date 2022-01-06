@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import redirect, render, get_object_or_404
 from .models import BlogEntry
 
 def splash(request):
@@ -22,4 +22,8 @@ def lessons(request):
 
 def blog_entry_detail(request, id):
     entry = get_object_or_404(BlogEntry, id=id)
+    if entry.is_draft:
+        return redirect('website:index')
+    if entry.url != request.path:
+        return redirect(entry.url)
     return render(request, 'website/entry.html', {'entry': entry})

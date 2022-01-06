@@ -7,3 +7,8 @@ class BlogEntry(models.Model):
     content = models.TextField()
     abstract = models.TextField()
     is_draft = models.BooleanField()
+    slug = models.CharField(max_length=100)
+
+    @property
+    def url(self):
+        return f'/blog/{self.id}/{self.slug}/'

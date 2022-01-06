@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, re_path
 
 from . import views
 
@@ -9,5 +9,5 @@ urlpatterns = [
     path('my-work-code/', views.my_work_code, name='my_work_code'),
     path('bio/', views.bio, name='bio'),
     path('lessons/', views.lessons, name='lessons'),
-    path('blog/<int:id>/', views.blog_entry_detail, name='blog_entry_detail')
+    re_path(r'^blog/(\d{1,5})/(?:.*/)?$', views.blog_entry_detail, name='blog_entry_detail')
 ]
