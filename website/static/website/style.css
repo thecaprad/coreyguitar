@@ -390,11 +390,11 @@ blockquote {
 .month {
     font-size: 30px;
     font-weight: 600;
-    margin-right: 5px;
 }
 
 .weekday {
     font-size: 30px;
+    font-weight: 100;
 }
 
 .gig-info {
