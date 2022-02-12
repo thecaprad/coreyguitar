@@ -27,3 +27,6 @@ def blog_entry_detail(request, id):
     if entry.url != request.path:
         return redirect(entry.url)
     return render(request, 'website/entry.html', {'entry': entry})
+
+def shows(request):
+    return render(request, 'website/shows.html', {})
