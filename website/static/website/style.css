@@ -369,8 +369,12 @@ blockquote {
     padding-right: 20px;
     font-family: 'Open Sans', sans-serif;
     border-style: solid;
-    border-width: 1px 0px 1px 0px;
+    border-width: 0px 0px 1px 0px;
     border-color: #a8a8a8;;
+}
+
+.show:first-of-type {
+    border-width: 1px 0px 1px 0px;
 }
 
 .date {

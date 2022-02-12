@@ -29,5 +29,5 @@ def blog_entry_detail(request, id):
     return render(request, 'website/entry.html', {'entry': entry})
 
 def shows(request):
-    shows = Show.objects.filter(date__gte=timezone.now())
+    shows = Show.objects.filter(date__gte=timezone.now().date()).order_by('date')
     return render(request, 'website/shows.html', {'shows': shows})
