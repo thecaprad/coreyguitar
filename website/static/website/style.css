@@ -393,20 +393,19 @@ blockquote {
     font-size: 30px;
 }
 
-.description {
-    display: block;
-    font-size: 17px;
+.gig-info {
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
-.description::after {
-    content: '/';
+.gig-info::after {
+    content: ' / ';
 }
 
 .venue {
-    display: block;
-    font-size: 17px;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .venue a {
@@ -711,7 +710,7 @@ blockquote {
     .date {
         display: inline-block;
         width: 20%;
-        margin-right: 1%;
+        margin-right: 2%;
     }
 
     .day {
@@ -729,19 +728,21 @@ blockquote {
     .description {
         display: inline-block;
         font-size: 15px;
-        width: 40%;
-        margin-right: 1%;
-        text-align: center;
+        width: 77%;
     }
 
-    .description::after {
+    .gig-info {
+        display: inline-block;
+        width: 54%;
+    }
+
+    .gig-info::after {
         content: '';
     }
 
     .venue {
         display: inline-block;
-        font-size: 15px;
-        width: 35%;
+        width: 45%;
         text-align: right;
     }
 
