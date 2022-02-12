@@ -8,21 +8,23 @@
     <img id="banner" src="{% static 'website/images/home-banner.png' %}" alt="Homepage banner">
     <div id="home-content">
         <h1 id="show-h1">Shows</h1>
+        {% for show in shows %}
         <div class="show">
             <div class="date">
-                <span class="day">12</span>
-                <span class="month">Mar</span>
-                <span class="weekday">Sat</span>
+                <span class="day">{{ show.date|date:"j" }}</span>
+                <span class="month">{{ show.date|date:"M" }}</span>
+                <span class="weekday">{{ show.date|date:"D" }}</span>
             </div>
             <div class="description">
-                <span class="gig-info">W. Frank Quinn & the Quarantinis @ 7:00 pm</span>
+                <span class="gig-info">{{ show.description }} @ {{ show.date|date:"g:i" }}<span style="font-variant: small-caps;"> {{ show.date|date:"A" }}</span></span>
                 <span class="venue">
-                    <a href="https://mickeyfinnsbrewery.com/">
-                        Mickey Finn's, Libertyville, IL
+                    <a href="{% if show.venue.url %}{{ show.venue.url }}{% else %}#{% endif %}">
+                        {{ show.venue.name }}, {{ show.venue.city }}, {{ show.venue.state }}
                     </a>
                 </span>
             </div>
         </div>
+        {% endfor %}
     </div>
 </main>
 {% endblock %}

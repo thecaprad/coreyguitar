@@ -1,6 +1,6 @@
-from django.http import HttpResponse
 from django.shortcuts import redirect, render, get_object_or_404
-from .models import BlogEntry
+from django.utils import timezone
+from .models import BlogEntry, Show, Venue
 
 def splash(request):
     return render(request, 'website/splash.html', {})
@@ -29,4 +29,5 @@ def blog_entry_detail(request, id):
     return render(request, 'website/entry.html', {'entry': entry})
 
 def shows(request):
-    return render(request, 'website/shows.html', {})
+    shows = Show.objects.filter(date__gte=timezone.now())
+    return render(request, 'website/shows.html', {'shows': shows})
