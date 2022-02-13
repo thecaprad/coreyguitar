@@ -8,6 +8,7 @@
     <img id="banner" src="{% static 'website/images/shows-banner.png' %}" alt="Homepage banner">
     <div id="home-content">
         <h1 id="show-h1">Shows</h1>
+        {% if shows %}
         {% for show in shows %}
         <div class="show">
             <div class="date">
@@ -24,6 +25,11 @@
             </div>
         </div>
         {% endfor %}
+        {% else %}
+        <div class="show">
+            <p style="text-align: center;">No upcoming shows — check back later.</p>
+        </div>
+        {% endif %}
     </div>
 </main>
 {% endblock %}
