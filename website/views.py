@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render, get_object_or_404
 from django.utils import timezone
+import datetime
 from .models import BlogEntry, Show, Venue
 
 def splash(request):
@@ -29,5 +30,6 @@ def blog_entry_detail(request, id):
     return render(request, 'website/entry.html', {'entry': entry})
 
 def shows(request):
-    shows = Show.objects.filter(date__gte=timezone.now().date()).order_by('date')
+    today = timezone.now() - datetime.timedelta(hours=6)
+    shows = Show.objects.filter(date__gte=today).order_by('date')
     return render(request, 'website/shows.html', {'shows': shows})
