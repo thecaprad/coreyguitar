@@ -715,8 +715,7 @@ blockquote {
 
     .date {
         display: inline-block;
-        width: 20%;
-        margin-right: 2%;
+        width: 16%;
     }
 
     .day {
@@ -734,12 +733,12 @@ blockquote {
     .description {
         display: inline-block;
         font-size: 15px;
-        width: 77%;
+        width: 83%;
     }
 
     .gig-info {
         display: inline-block;
-        width: 54%;
+        width: 50%;
     }
 
     .gig-info::after {
@@ -748,7 +747,7 @@ blockquote {
 
     .venue {
         display: inline-block;
-        width: 45%;
+        width: 49%;
         text-align: right;
     }
 
