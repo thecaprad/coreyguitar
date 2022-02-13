@@ -483,6 +483,8 @@ blockquote {
         display: inline-block;
         position: absolute;
         right: 0;
+        height: 53px;
+        padding-top: 6.5px;
     }
 
     nav a {
