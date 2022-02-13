@@ -18,9 +18,8 @@
             <div class="description">
                 <span class="gig-info">{{ show.description }} @ {{ show.date|date:"g:i" }}<span style="font-variant: small-caps;"> {{ show.date|date:"A" }}</span></span>
                 <span class="venue">
-                    <a href="{% if show.venue.url %}{{ show.venue.url }}{% else %}#{% endif %}">
-                        {{ show.venue.name }}, {{ show.venue.city }}, {{ show.venue.state }}
-                    </a>
+                    <a href="{% if show.venue.url %}{{ show.venue.url }}{% else %}#{% endif %}">{{ show.venue.name }}</a>
+                    | {{ show.venue.city }}, {{ show.venue.state }}
                 </span>
             </div>
         </div>

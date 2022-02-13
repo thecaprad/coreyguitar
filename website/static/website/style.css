@@ -410,11 +410,13 @@ blockquote {
 .venue {
     display: inline-block;
     font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.63);
 }
 
 .venue a {
     text-decoration: underline;
-    color: rgba(0, 0, 0, 0.658)
+    color: rgba(0, 0, 0, 0.63);
 }
 
 /* LANDSCAPE QUERY */
@@ -750,11 +752,7 @@ blockquote {
         text-align: right;
     }
 
-    .venue a {
-        text-decoration: none;
-    }
-
     .venue a:hover {
-        text-decoration: underline;
+        color: rgb(0, 0, 0);
     }
 }
