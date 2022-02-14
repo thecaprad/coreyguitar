@@ -397,24 +397,23 @@ blockquote {
     font-weight: 100;
 }
 
-.gig-info {
+.show-description {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
-.gig-info::after {
+.show-description::after {
     content: ' / ';
 }
 
-.venue {
-    display: inline-block;
+.venue-info {
     font-size: 16px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.63);
 }
 
-.venue a {
+.venue-info a {
     text-decoration: underline;
     color: rgba(0, 0, 0, 0.63);
 }
@@ -717,7 +716,6 @@ blockquote {
 
     .date {
         display: inline-block;
-        width: 16%;
     }
 
     .day {
@@ -733,27 +731,22 @@ blockquote {
     }
 
     .description {
-        display: inline-block;
+        display: block;
         font-size: 15px;
-        width: 83%;
+        width: 100%;
+        position: relative;
     }
 
-    .gig-info {
-        display: inline-block;
-        width: 50%;
+    .venue-info {
+        right: 0px;
+        position: absolute;
     }
 
-    .gig-info::after {
+    .show-description::after {
         content: '';
     }
 
-    .venue {
-        display: inline-block;
-        width: 49%;
-        text-align: right;
-    }
-
-    .venue a:hover {
+    .venue-info a:hover {
         color: rgb(0, 0, 0);
     }
 }
