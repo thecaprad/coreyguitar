@@ -730,23 +730,28 @@ blockquote {
         font-size: 18px;
     }
 
-    .description {
-        display: block;
-        font-size: 15px;
-        width: 100%;
-        position: relative;
-    }
-
-    .venue-info {
-        right: 0px;
-        position: absolute;
-    }
-
-    .show-description::after {
-        content: '';
-    }
-
     .venue-info a:hover {
         color: rgb(0, 0, 0);
+    }
+
+    /* WIDE DESKTOP QUERY */
+    @media screen and (min-width: 1160px) {
+
+        /* SHOWS */
+        .description {
+            display: block;
+            font-size: 15px;
+            width: 100%;
+            position: relative;
+        }
+
+        .venue-info {
+            right: 0px;
+            position: absolute;
+        }
+
+        .show-description::after {
+            content: '';
+        }
     }
 }
