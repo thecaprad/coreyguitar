@@ -104,6 +104,11 @@ nav a {
 
 #top-link {
     width: 50%;
+    display: block;
+}
+
+#top-link.active {
+    display: none;
 }
 
 #hamburger {
@@ -175,14 +180,12 @@ section aside img {
 }
 
 .bio-row:nth-of-type(2) .bio-box-a {
-    width: 46%;
-    margin: 0 1.5%;
+    width: 47.5%;
     float: left;
 }
 
 .bio-row:nth-of-type(2) .bio-box-b {
-    width: 46%;
-    margin: 0 1.5%;
+    width: 47.5%;
     float: right;
 }
 
@@ -456,7 +459,7 @@ blockquote {
 }
 
 /* DESKTOP QUERY */
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 990px) {
 
     /* BASE DESKTOP */
 
@@ -505,6 +508,10 @@ blockquote {
 
     #links a:last-child {
         padding-inline-end: 0;
+    }
+
+    #top-link {
+        display: inline-block;
     }
 
     #hamburger {
@@ -605,7 +612,7 @@ blockquote {
     /* BIO DESKTOP */
 
     #bio-content {
-        width: 85%;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -621,7 +628,7 @@ blockquote {
     .bio-row {
         display: block;
         position: relative;
-        width: 99%;
+        width: 100%;
         margin: 3% auto;
         overflow: hidden;
     }
@@ -631,15 +638,13 @@ blockquote {
     }
 
     .bio-box-a {
-        width: 46%;
-        margin: 0 1.5%;
+        width: 47.5%;
         float: left;
 
     }
 
     .bio-box-b {
-        width: 46%;
-        margin: 0 1.5%;
+        width: 47.5%;
         float: right;
     }
 
