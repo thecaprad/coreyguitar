@@ -10,5 +10,6 @@ urlpatterns = [
     path('bio/', views.bio, name='bio'),
     path('shows/', views.shows, name='shows'),
     path('lessons/', views.lessons, name='lessons'),
+    path('blog/', views.blog, name='blog'),
     re_path(r'^blog/(\d{1,5})/(?:.*/)?$', views.blog_entry_detail, name='blog_entry_detail')
 ]

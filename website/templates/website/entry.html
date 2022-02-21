@@ -7,6 +7,7 @@
     <article class="blog-entry">
         <h1>{{ entry.title }}</h1>
         <p id="entry-date">{{ entry.date|date:"M. j, Y" }}</p>
+        <i>The TL;DR of this is: {{ entry.abstract }}</i>
         {{ entry.content|safe }}
     </article>
 </section>

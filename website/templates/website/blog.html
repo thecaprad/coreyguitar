@@ -1,0 +1,21 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %} Corey Richardson | Chicago, IL {% endblock %}
+
+{% block content %}
+<main>
+    <img id="banner" src="{% static 'website/images/blog-banner.png' %}" alt="Homepage banner">
+    <div id="home-content">
+        <h1 id="show-h1">Blog</h1>
+        {% for entry in entries %}
+            <div>
+                <p>
+                    <a href="{% url 'website:blog_entry_detail' entry.id %}">{{ entry.title }}</a> — {{ entry.date }}<br>
+                    <i>{{ entry.abstract }}</i>
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}

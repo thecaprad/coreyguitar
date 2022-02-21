@@ -21,6 +21,10 @@ def bio(request):
 def lessons(request):
     return render(request, 'website/lessons.html', {})
 
+def blog(request):
+    entries = BlogEntry.objects.all().order_by('-date')
+    return render(request, 'website/blog.html', {'entries': entries})
+
 def blog_entry_detail(request, id):
     entry = get_object_or_404(BlogEntry, id=id)
     if entry.is_draft:
